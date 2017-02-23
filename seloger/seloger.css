@@ -1,0 +1,252 @@
+
+body{
+
+  font-family: 'Helvetica', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-image: url(img/seloger.jpeg);
+  background-color: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+*{
+  margin: 0;
+}
+
+#navbar{
+  font-size: 13px;
+  background-color: rgb(218, 8, 8);
+  display: flex;
+  flex-direction: row;
+  height: 3.1vh;
+  align-items: center;
+  padding-top:4px;
+  justify-content: space-between;
+}
+
+#left-nav{
+  margin-left: 4%;
+}
+
+#center-nav{
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-bars{
+  padding: 8px;
+}
+
+#right-nav{
+  font-weight: bolder;
+  margin-right: 4%;
+
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+main{
+  color: white;
+}
+
+#main-first-page-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo-se-loger{
+  margin-top: 20px;
+}
+
+.titre-1-main{
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+#titre-2-main{
+  font-weight: lighter;
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+#titre-2-main .titre-1-main{
+  display: flex;
+  text-align: center;
+}
+.tabs {
+  position: relative;
+  min-height: 250px; /* This part sucks */
+  clear: both;
+  margin: 45px 0;
+  width: 45%;
+}
+
+.tab {
+  float: left;
+}
+.tab label {
+  padding: 15px 45px 15px 45px;
+  position: relative;
+  margin-right: -3px;
+  left: 55px;
+  border-radius: 7px 7px 0px 7px;
+  background: rgb(73, 73, 73);
+  width: 100px;
+  font-weight: bold;
+}
+
+.tab [type=radio] {
+  display: none;
+}
+
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  color: black;
+}
+
+.tab-vendre{
+  display: flex;
+  align-items: center;
+}
+
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+  color: black;
+  border-radius: 7px 7px 0px 7px;
+}
+
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+input.input-form-text{
+  height: 5vh;
+  width: 55%;
+}
+
+input.input-budget-style {
+  width: 37%;
+  height: 5vh;
+}
+
+input[class^="input"]{
+  color: rgb(69, 69, 69);
+  padding: 5px;
+  background-color: rgba(217, 217, 217, 0.65);
+  border-style: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  border: 0.5px solid rgb(184, 178, 178);
+}
+
+input[type=checkbox]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    border-style: none;
+    border-radius: 4px
+
+}
+.radio-button-div{
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 4px;
+}
+
+#radio-button-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+
+}
+
+.radio-button-div{
+  width: 180px;
+  height: 5vh;
+  background-color: rgba(217, 217, 217, 0.65);
+  border-radius: 4px;
+  margin-right: 3px;
+  color: rgb(87, 87, 87);
+
+}
+
+.criteres{
+  color: rgb(87, 87, 87);
+  font-size: 13px;
+  margin: 30px;
+}
+
+[type="submit"]{
+  background-color: rgb(255, 191, 0);
+  width: 24%;
+  height: 6vh;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  border-style: none;
+  margin-left: 60%;
+}
+
+#main-second-page-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30vh;
+}
+.box-second-page{
+  background-color: white;
+  color: black;
+  height: 40vh;
+  width: 28%;
+  border-radius: 5px;
+}
+
+[class="box-second-page"]{
+  color: red;
+  font-size: 10px;
+  font-weight: normal;
+  padding: 12px;
+  text-align: center;
+}
+
+
+.barre-box{
+  background-color: grey;
+  width: 90%;
+  height: 1px;
+  margin: 10px;
+
+}
+
+div.int-text-box a{
+  color: black;
+}
+
+#section-3-page{
+  background-image: url("http://www.seloger.com/z/produits/sl/homepage/assets/img/edito/edito-bg.jpg");
+  background-repeat: no-repeat;
+  height: 1000vh;
+  width: 100%;
+}
